@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+.search-page {
+  width: 100%;
+  min-height: 100vh;
+}
+.search-nav-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 12px;
+  border-bottom: 1px solid #dadce0;
+}
+.search-nav-top i {
+  color: rgb(81, 81, 81);
+  font-size: 18px;
+}
+.search-nav-bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px;
+  gap: 16px;
+  padding-right: 16px;
+  position: relative;
+}
+
+.search-nav-bottom .grid {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.search-nav-bottom .myprofile {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search-nav-bottom .email-link,
+.github-link {
+  text-decoration: none;
+  color: #202124;
+  font-weight: 300;
+  font-size: 14px;
+  cursor: pointer;
+}
+.search-nav-bottom .email-link:hover {
+  text-decoration: underline;
+}
+.search-nav-bottom .github-link:hover {
+  text-decoration: underline;
+}
+
+.grid-open {
+  width: 300px;
+  max-width: calc(100vw - 40px);
+  height: 300px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.08);
+  border: 8px solid #ebf1fb;
+  padding: 16px;
+  position: absolute;
+  top: 56px;
+  right: 12px;
+  border-radius: 18px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-open {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #f7fafe;
+}
+
+.grid-open::-webkit-scrollbar {
+  width: 8px;
+}
+
+.grid-open::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.grid-open::-webkit-scrollbar-thumb {
+  background: #cecdcd;
+  border-radius: 8px;
+}
+.grid-menus {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.grid-menus .grid-row1-menus,
+.grid-row2-menus {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+.grid-menus .grid-row1-menus img {
+  height: 30px;
+  width: 30px;
+}
+.grid-menus .grid-row2-menus img {
+  height: 30px;
+  width: 25px;
+}
+.grid-menus .grid-icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: rgb(81, 81, 81);
+  font-size: 14px;
+}
+.grid-menus .grid-row2-menus .ytube-icon {
+  height: 29px;
+  width: 35px;
+}
+.grid-menus .grid-row2-menus .gmail-icon {
+  height: 28px;
+  width: 30px;
+}
+.grid-menus .grid-row2-menus .map-icon {
+  height: 30px;
+  width: 22px;
+}
+
+.SearchContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+}
+.google-text-logo-big img {
+  width: 220px;
+  height: auto;
+}
+.google-text-logo-big {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.SearchContainer .search-input-box {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 40px;
+  outline: none;
+  border: 1px solid rgb(214, 214, 214);
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.12);
+  position: relative;
+  margin-top: 22px;
+}
+.SearchContainer .search-input-box input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 40px;
+  border: transparent;
+  outline: none;
+  font-size: 16px;
+  padding-left: 48px;
+  padding-right: 72px;
+}
+.SearchContainer .search-input-box input::placeholder {
+  font-size: 16px;
+}
+.SearchContainer .search-input-icon {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+.SearchContainer .search-icon {
+  left: 17px;
+  top: 13px;
+  font-size: 18px;
+  color: rgb(85, 85, 85);
+  font-weight: 500;
+}
+.SearchContainer .search-input-box .mic {
+  position: absolute;
+  right: 60px;
+  top: 13px;
+  height: 18px;
+  width: 15px;
+}
+.SearchContainer .search-input-box .lens {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  height: 18px;
+  width: 18px;
+}
+
+.SearchContainer .history-list {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 0 0 40px 40px;
+  outline: none;
+  border: 1px solid rgb(214, 214, 214);
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.12);
+  padding-bottom: 12px;
+  position: relative;
+  top: -4px;
+  z-index: 3;
+  background-color: white;
+  border-top: none;
+}
+.SearchContainer .history-list li {
+  list-style: none;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #202124;
+  cursor: context-menu;
+}
+.SearchContainer .history-list li:hover {
+  background-color: #eeeeee;
+}
+.SearchContainer .history-list li:hover .remove-history {
+  display: block;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.SearchContainer .history-list li span i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: rgb(85, 85, 85);
+  cursor: pointer;
+}
+.SearchContainer .history-list .remove-history {
+  display: none;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.SearchContainer .history-list .remove-history:hover {
+  background-color: rgb(210, 210, 210);
+  cursor: pointer;
+  display: block;
+}
+.SearchContainer .search-menu-box {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.SearchContainer .search-menu-box div {
+  padding: 10px 16px;
+  color:#6e6e6e;
+  border: 1px solid #d0d0d0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Larger screens (tablet/desktop) */
+@media (min-width: 900px) {
+  .SearchContainer {
+    padding: 0;
+  }
+  .SearchContainer .search-input-box {
+    width: 50%;
+    max-width: none;
+  }
+  .SearchContainer .history-list {
+    width: 50%;
+    max-width: none;
+  }
+  .google-text-logo-big img {
+    width: 265px;
+  }
+  .search-nav-bottom {
+    padding-right: 24px;
+    gap: 24px;
+  }
+  
+}
+@media (max-width:500px){
+  .SearchContainer .search-input-box .mic {
+  position: absolute;
+  right: 45px;
+  top: 13px;
+  height: 18px;
+  width: 15px;
+}
+.SearchContainer .search-input-box .lens {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  height: 18px;
+  width: 18px;
+}
+.grid-open {
+  z-index: 3;
+}
+
+}
+.SearchContainer .search-menu-box div:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+
+/* Dummy Style */
+
+.dummy{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dummy img{
+  height: 150px;
+  width: 150px;
+}
