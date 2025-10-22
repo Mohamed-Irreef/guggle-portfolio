@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import SearchNav from '../components/search-page/SearchNav'
 import SearchContainer from '../components/search-page/SearchContainer'
 
-const SearchPage = () => {
+const SearchPage = ({searched,setSearched}) => {
    const [gridOpen,setGridOpen] = useState(false)
    const [historyOpen,setHistoryOpen] = useState(false)
   
@@ -10,6 +10,8 @@ const SearchPage = () => {
    const searchContainerProps={
     historyOpen,
     setHistoryOpen,
+    searched,
+    setSearched
    }
    function closeAll(){
     gridOpen==true?setGridOpen(false):null;
