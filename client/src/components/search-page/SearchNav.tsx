@@ -262,7 +262,7 @@ const SearchNav = ({
                   onClick={() => {
                     // open PDF in a new tab (browser PDF viewer)
                     // use exact filename provided
-                    const path = encodeURI('/Mohamed_Irreef_Resume .pdf');
+                    const path = `${window.location.origin}/Mohamed_Irreef_%20Resume%20.pdf`;
                     window.open(path, '_blank');
                     setProfileOpen(false);
                   }}
@@ -272,8 +272,8 @@ const SearchNav = ({
                 </button>
                 <a
                   className="resume-download"
-                  href={encodeURI('/Mohamed_Irreef_Resume .pdf')}
-                  download={'Mohamed_Irreef_Resume .pdf'}
+                  href="/Mohamed_Irreef_%20Resume%20.pdf"
+                  download="Mohamed_Irreef_ Resume .pdf"
                   onClick={() => setProfileOpen(false)}
                   aria-label="Download resume as PDF"
                 >
