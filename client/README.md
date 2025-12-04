@@ -1,16 +1,44 @@
-# React + Vite
+# Guggle Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A production-ready portfolio web app with a desktop-first Guggle-themed UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Desktop-first responsive design
+- Mobile/tablet fallback page
+- SEO optimized
+- Accessibility compliant
+- Unit and integration tests
+- CI/CD with GitHub Actions
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repo
+2. `npm install`
+3. `npm run dev` for development
+4. `npm run build` for production build
 
-## Expanding the ESLint configuration
+## Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `npm run dev`: Start dev server
+- `npm run build`: Build for production
+- `npm run lint`: Run ESLint
+- `npm run test`: Run tests
+- `npm run test:ui`: Run tests with UI
+
+## Branding
+
+To change brand from Guggle to something else:
+
+1. Run `scripts/replace-brand.ps1` (edit the script for new name)
+2. Update assets accordingly
+
+## Deployment
+
+Build the project and deploy the `dist` folder to static hosting like Netlify or Vercel.
+
+For server deployment, deploy both client and server.
+
+## License
+
+See LICENSES.md for all third-party licenses.

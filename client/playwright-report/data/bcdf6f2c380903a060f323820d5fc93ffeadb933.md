@@ -1,0 +1,89 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+    - navigation [ref=e4]:
+        - generic [ref=e5]:
+            - generic [ref=e6]:
+                - link "Guggle" [ref=e7]:
+                    - /url: /
+                    - img "Guggle" [ref=e8]
+                - generic [ref=e10]:
+                    - textbox [ref=e11]: test search
+                    - generic [ref=e12]:
+                        - generic "clear" [ref=e13] [cursor=pointer]: 
+                        - img "search by voice" [ref=e15] [cursor=pointer]
+                        - img "search by lens" [ref=e16] [cursor=pointer]
+                        - button "" [ref=e17]:
+                            - generic "search" [ref=e18] [cursor=pointer]: 
+            - generic [ref=e20]:
+                - generic "Enable custom search" [ref=e21] [cursor=pointer]:
+                    - switch "Enable custom search"
+                    - generic [ref=e23]: Custom Search
+                - link "Email" [ref=e24] [cursor=pointer]:
+                    - /url: mailto:mdirreef@gmail.com
+                - link "GitHub" [ref=e25] [cursor=pointer]:
+                    - /url: https://github.com/Mohamed-Irreef
+                - img "grid" [ref=e26] [cursor=pointer]
+                - button "profile" [ref=e28] [cursor=pointer]:
+                    - img "profile" [ref=e29]
+        - generic [ref=e30]:
+            - link " All" [ref=e31]:
+                - /url: /search-result/all
+                - generic [ref=e32]:
+                    - generic [ref=e33]: 
+                    - generic [ref=e34]: All
+            - link " Projects" [ref=e35]:
+                - /url: /search-result/projects
+                - generic [ref=e36]:
+                    - generic [ref=e37]: 
+                    - generic [ref=e38]: Projects
+            - link " Images" [ref=e39]:
+                - /url: /search-result/images
+                - generic [ref=e40]:
+                    - generic [ref=e41]: 
+                    - generic [ref=e42]: Images
+            - link " Videos" [ref=e43]:
+                - /url: /search-result/videos
+                - generic [ref=e44]:
+                    - generic [ref=e45]: 
+                    - generic [ref=e46]: Videos
+            - link " News" [ref=e47]:
+                - /url: /search-result/news
+                - generic [ref=e48]:
+                    - generic [ref=e49]: 
+                    - generic [ref=e50]: News
+    - generic [ref=e52]:
+        - paragraph [ref=e53]: 'Did you mean:'
+        - generic [ref=e54]:
+            - generic [ref=e55]: All
+            - generic [ref=e56]: About
+            - generic [ref=e57]: Education
+            - generic [ref=e58]: Skills
+            - generic [ref=e59]: Projects
+        - paragraph [ref=e60]: No results containing all your search terms were found.
+        - paragraph [ref=e61]: Your search - test search - did not match any documents.
+        - paragraph [ref=e62]: 'Suggestions:'
+        - list [ref=e63]:
+            - listitem [ref=e64]: Try a different keyword from the search dropdown
+            - listitem [ref=e65]: Make sure that all words are spelled correctly.
+            - listitem [ref=e66]: Click one of the links from the suggestions or menu above
+    - contentinfo [ref=e68]:
+        - paragraph [ref=e69]: © 2025 Mohamed Irreef S. All rights reserved.
+        - generic [ref=e70]:
+            - link "LinkedIn" [ref=e71]:
+                - /url: https://www.linkedin.com/in/-mohamed-ireef-s-23-/
+            - text: •
+            - link "GitHub" [ref=e72]:
+                - /url: https://github.com/Mohamed-Irreef
+            - text: •
+            - link "Email" [ref=e73]:
+                - /url: mailto:mdirreef@gmail.com
+            - text: •
+            - link "Instagram" [ref=e74]:
+                - /url: https://www.instagram.com/scratch_2_deploy?igsh=c2J2N3JybjFpdmFz
+            - text: •
+            - link "YouTube" [ref=e75]:
+                - /url: https://www.youtube.com/@EduNexEducation-q6v9g
+        - paragraph [ref=e76]: Guggle is not affiliated with Google.
+```
