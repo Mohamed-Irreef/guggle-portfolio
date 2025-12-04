@@ -499,7 +499,7 @@ const SearchResultNav = ({
                       className="resume-btn"
                       onClick={() => {
                         // use exact filename provided
-                        const path = encodeURI('/Mohamed_Irreef_Resume .pdf');
+                        const path = encodeURI('/Mohamed_Irreef_Resume.pdf');
                         window.open(path, '_blank');
                         setProfileOpen(false);
                       }}
@@ -509,8 +509,8 @@ const SearchResultNav = ({
                     </button>
                     <a
                       className="resume-download"
-                      href={encodeURI('/Mohamed_Irreef_Resume .pdf')}
-                      download={'Mohamed_Irreef_Resume .pdf'}
+                      href={encodeURI('/Mohamed_Irreef_Resume.pdf')}
+                      download={'Mohamed_Irreef_Resume.pdf'}
                       onClick={() => setProfileOpen(false)}
                       aria-label="Download resume as PDF"
                     >
