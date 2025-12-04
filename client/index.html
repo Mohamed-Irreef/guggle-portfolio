@@ -51,20 +51,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      // Mobile restriction check
-      function checkMobileRestriction() {
-        if (window.innerWidth < 1024) {
-          window.location.href = '/mobile-restriction.html';
-        }
-      }
-
-      // Check on load
-      checkMobileRestriction();
-
-      // Check on resize for dynamic detection
-      window.addEventListener('resize', checkMobileRestriction);
-    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
