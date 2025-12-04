@@ -499,7 +499,7 @@ const SearchResultNav = ({
                       className="resume-btn"
                       onClick={() => {
                         // use full URL to avoid routing issues
-                        const path = `${window.location.origin}/Mohamed_Irreef_Resume.pdf`;
+                        const path = `${window.location.origin}/resume.pdf`;
                         window.open(path, '_blank');
                         setProfileOpen(false);
                       }}
@@ -509,8 +509,8 @@ const SearchResultNav = ({
                     </button>
                     <a
                       className="resume-download"
-                      href="/Mohamed_Irreef_Resume.pdf"
-                      download={'Mohamed_Irreef_Resume.pdf'}
+                      href="/resume.pdf"
+                      download={'resume.pdf'}
                       onClick={() => setProfileOpen(false)}
                       aria-label="Download resume as PDF"
                     >
